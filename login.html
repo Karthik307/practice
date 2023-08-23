@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forgot password</title>
+	<link rel="stylesheet" type="text/css" href="css/stylelog.css">
+	<script src="script/script.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="image">
+			<img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+		</div>
+		<div class="form-center">
+			<form name="details" onsubmit="return validatelogin()" method="post">
+				<p>Login to Facebook</p>
+				<input type="text" name="email" placeholder="Email or phone number">
+				<span id="emailerror"></span> <br>
+				<input type="password" name="passw" placeholder="Password">
+				<span id="passerror"></span> <br>
+				<button type="submit">Login</button> <br>
+				<a href="#" class="forg">Forgot Password?</a>
+		</div>
+	</div>
+</body>
+
+</html>

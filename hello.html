@@ -1,130 +1,31 @@
 <!DOCTYPE html>
-<html>
-<!--JavaScript for the validation of Email and Password, for temprory I haven't used email validation-->
-<script type="text/javascript"> 
-    function validate(){
-        let x=document.forms["details"]["email"].value&&document.forms["details"]["passw"].value;
-        if(x== ""){
-            alert("Please check login details!");
-            return false;
-        }
-    }
-</script>
-<!--Used Incode CSS-->
-<style type="text/css">
-/*Used for whole page padding and margins and layout */ 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-/*for making page little responsive*/
-.flex {
-  display: flex;
-  align-items: center;
-}
-.container {
-  padding: 0 15px;
-  min-height: 100vh;
-  justify-content: center;
-  background: #f0f2f5;
-}
-/*properties for facebook*/
-.iamg{
-    height: 106px;
-    margin: -28px;
-}
-/*properties for lines below facebook*/
-h2{
-    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
-    font-size: 28px;
-    font-weight: normal;
-    line-height: 32px;
-    width: 500px;
-}
-img{
-    height: 106px;
-    margin: -28px;
-}
-h2{
-    width: 500px;
-    font-size: 28px;
-    font-weight: normal;
-    line-height: 32px;
-}
-/*styling for form and its elements*/
-form {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
-}
-form input {
-  height: 55px;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-bottom: 15px;
-  font-size: 1rem;
-  padding: 0 14px;
-}
-form button{
-    align-items: center;
-    border: none;
-    background: #1877f2;
-    padding: 15px 0;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-form .forg{
-    text-decoration: none;
-    text-align: center;
-    color:#1877f2;
-}
+<html lang="en">
 
-.button{
-   align-items: center;
-    border: none;
-    background: #42b72a;
-    padding: 15px 0;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 1.25rem;
-    font-weight: 600;
-    text-align: center;
-}
-.button a{
-    text-decoration: none;
-    color:#fff; 
-}
-</style>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Facebook Assignment</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="script/script.js"></script>
 </head>
+
 <body>
     <div class="container flex">
-        <div class=iamg>
-            <img class="fb_logo _8ilh img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook"> 
+        <div class=logo-about>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
             <h2>Connect with friends and the world around you on Facebook.</h2>
         </div>
-    <form name="details" onsubmit="return validate()" method="post">
-    <input type="text" name="email" placeholder="Email or phone number">
-    <input type="password" name="passw" placeholder="Password">
-    <button type="submit">Login</button>  <br>
-    <a href="reset.html" class="forg">Forgot Password?</a> <br>
-    <div class="button">
-        <a href="create.html">Create new account</a>
-    </div>
-    </form>
+        <form name="details" onsubmit="return validate()" method="post">
+            <input type="text" name="email" placeholder="Email or phone number">
+            <input type="password" name="passw" placeholder="Password">
+            <button type="submit">Login</button> <br>
+            <a href="reset.html" class="forg">Forgot Password?</a>
+            <div class="sep"></div>
+            <div class="button">
+                <a href="create.html">Create new account</a>
+            </div>
+        </form>
     </div>
 </body>
+
 </html>
