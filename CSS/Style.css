@@ -1,0 +1,118 @@
+/*Used for whole page padding and margins and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: #f0f2f5;
+}
+
+/*for making page little responsive*/
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/*background*/
+.container {
+    padding: 0 15px;
+    min-height: 100vh;
+    justify-content: center;
+    background: #f0f2f5;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 980px;
+}
+
+/*properties for facebook*/
+.logo-about {
+    height: 106px;
+    margin: -28px;
+}
+
+img {
+    height: 106px;
+    margin: -28px;
+}
+
+/*properties for lines below facebook*/
+h2 {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+}
+
+/*styling for form and its elements*/
+form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+form input {
+    height: 55px;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+}
+
+input:focus {
+    border-color: #1877f2;
+}
+
+form button {
+    align-items: center;
+    border: none;
+    background: #1877f2;
+    padding: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+form .forg {
+    text-decoration: none;
+    background: #fff;
+    text-align: center;
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button {
+    align-items: center;
+    border: none;
+    background: #42b72a;
+    padding: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+    background: none;
+}
+
+.sep {
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
