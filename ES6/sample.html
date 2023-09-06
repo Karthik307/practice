@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- List Display -->
+    <p id="list"></p>
+    <h1>forEach() </h1>
+    <p id="sumr"></p>
+    <p id="mulr"></p>
+    <!-- <p id="divr"></p> -->
+    <p id="subr"></p>
+    <!-- Reduce -->
+    <h1>Reduce</h1>
+    <p id="red"></p>
+    <p id="redr"></p>
+    <p id="reds"></p>
+    <!-- Find -->
+    <h1>Find</h1>
+    <p id="find"></p>
+    <!-- FindInex -->
+    <h1>FindIndex() </h1>
+    <p id="findindex"></p>
+    <!-- Some -->
+    <h1>some() </h1>
+    <p id="some"></p>
+    <!-- Every -->
+    <h1>every() </h1>
+    <p id="every"></p>
+    <!-- Destructuring -->
+    <p>
+    <h3>1. What is Destructuring?</h3>
+    Destructing is a process of extracting the exact elements from an array which are required to,
+    for example if we have a array called cpu[items]=['motherboard','processor','GPU','display ports', 'disk ports',
+    'SSD', 'HDD'].
+    When we use the regular method of extracting the elements from array we had to aceess all the elements presnt but,
+    in destructuring we can access the elements which are actually reuqired for us. we can actually just take the
+    reuiqred components of cpu array to make the desired result.<br>
+    <pre>
+        Example: const vehicles = ['mustang', 'f-150', 'expedition'];
+                 const [car, truck, suv] = vehicles;
+    Here we can extract exactly what we want if we feel that truck and SUV isn' required we can replace them by empty 
+    values which gives us only car as result.
+
+    const [car,,]=vehicles;
+    </pre>
+    </p>
+    <!--2. What can we destructure?  -->
+    <h3>2. What can we destructure?</h3>
+    <p>We can use destruture for arrays, objects and maps</p>
+    <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">Source</a>
+    <script src="sample.js"></script>
+    <!-- 3.Spread or Rest Operator -->
+    <h3>3.Spread or Rest Operator</h3>
+    <p>Spread is used to collect elemts from different arrays and place them in a singe array or objet.</p>
+    <pre>ex: const a1=[1,2,3] and const a2=[4,5,6]</pre>
+    <p>Here we can use spread operator to combine both to make a singe array and spread operator is identified by 3 dots
+        (...).</p>
+    <pre>Now to combine we have to write the code as 
+        const a=[...a1, ...a2];
+        console.log(a);
+    </pre> <br>
+    <p>On the other hand rest operator is little opposite it is only used for function arguments in destructuring, it
+        allows a function to collect infinite number of arguments</p>
+    <pre>
+        ex: const a,b, ...c;
+            [a,b]=[1,2];
+            if we print a will be 1 and b will be 2.
+            if other elements are added we can simply use rest operator with 3 dots and use it to assign them to it, we can also call the elements of rest using index value.
+                ex: [a,b,...c]=[1,2,3,4,5,6];
+                <p>here a=1 and b =2 so remaing are stored by rest operator using array and index values.</p>
+                if we print console.log(c) the output will be 3,4,5,6.
+                if we use c(n) it will give element present in specific index value.
+    </pre>
+</body>
+
+</html>
